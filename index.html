@@ -1,42 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-    
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio Daniel Muñoz</title>
+    <title>Inicio | Portafolio Daniel Muñoz</title>
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Dani</a>
 
-        <nav>
-            <a href="#" class="active"> Inicio</a>
-            <a href="#" >Proyectos</a>
-            <a href="#" >Habilidades</a>
-            <a href="#" >Estudios</a>
-            <a href="#" >Experiencia</a>
-            <a href="#" >Contacto</a>
-        </nav>
-    </header>
+<header>
+    <a href="index.html" class="logo">Dani</a>
+
+    <nav>
+        <a href="index.html" class="active">Inicio</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="estudios.html">Estudios</a>
+        <a href="experiencia.html">Experiencia</a>
+    </nav>
+</header>
+
+<main>
     <section class="home">
-        <div class="home-img">
-            <img src="principal.jpg" alt="">
+        
+        <!-- Imagen principal -->
+        <div class="home-img reveal">
+            <img src="principal.jpg" alt="Daniel Muñoz">
         </div>
-        <div class="home-content">
+
+        <!-- Contenido principal -->
+        <div class="home-content reveal">
             <h1>Hola, me llamo <span>Dani</span></h1>
-            <h3 class="typing-text"> Soy <span></span></h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. 
-                Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis 
-                deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+            <h3 class="typing-text">Soy <span></span></h3>
+
+            <p>
+                Desarrollador web y estudiante de Desarrollo de Aplicaciones Web (DAW).
+                Me apasiona crear aplicaciones modernas, funcionales y visualmente atractivas.
+            </p>
+
+            <!-- Botones principales -->
+            <div class="hero-buttons">
+                <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
+                <a href="CV_Dani.pdf" class="btn btn-secondary" download>
+                    Descargar CV
+                </a>
             </div>
-            <a href="#" class="btn">Contáctame</a>
+
+            <!-- Contacto integrado -->
+            <div class="contacto-hero">
+                <div class="contact-links">
+
+                    <!-- Abrir cliente de correo -->
+                    <a href="mailto:danimunozmartin13@gmail.com?subject=Contacto%20desde%20tu%20portfolio">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/daaniii13" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/tu-linkedin/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+
+                </div>
+            </div>
         </div>
     </section>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
